@@ -53,43 +53,55 @@
       </div>
     </nav>
 
-    <!-- Kontakt Sekcija -->
-    <section class="container my-5">
-      <h2 class="text-center mb-4">Kontakt</h2>
-      <div class="row">
-        <!-- Kontakt Informacije -->
-        <div class="col-md-5">
-          <h4>Kontakt informacije</h4>
-          <p><i class="bi bi-geo-alt-fill"></i> Adresa: Ilica 4, Ravna Gora</p>
-          <p><i class="bi bi-telephone-fill"></i> Telefon: +385 99 123 4567</p>
-          <p><i class="bi bi-envelope-fill"></i> Email: info@masaze.hr</p>
-          <h5>Pratite nas</h5>
-          <a href="#" class="me-2"><i class="bi bi-facebook fs-3"></i></a>
-          <a href="#" class="me-2"><i class="bi bi-instagram fs-3"></i></a>
-          <a href="#" class="me-2"><i class="bi bi-whatsapp fs-3"></i></a>
+   
+        <div class="container mt-5">
+            <h2 class="text-center">Rezervacija termina</h2>
+            <form id="rezervacijaForm">
+                <!-- Vrsta masaže -->
+                <div class="mb-3">
+                    <label for="masaža" class="form-label">Odaberite masažu</label>
+                    <select class="form-select" id="masaža" required>
+                        <option value="" disabled selected>Odaberi vrstu masaže</option>
+                        <option value="Klasična masaža">Klasična masaža</option>
+                        <option value="Sportska masaža">Sportska masaža</option>
+                        <option value="Terapeutska masaža">Terapeutska masaža</option>
+                    </select>
+                </div>
+    
+                <!-- Datum i vrijeme -->
+                <div class="mb-3">
+                    <label for="datum" class="form-label">Datum</label>
+                    <input type="date" class="form-control" id="datum" required>
+                </div>
+                <div class="mb-3">
+                    <label for="vrijeme" class="form-label">Vrijeme</label>
+                    <input type="time" class="form-control" id="vrijeme" required>
+                </div>
+    
+                <!-- Kontakt podaci -->
+                <div class="mb-3">
+                    <label for="ime" class="form-label">Ime i prezime</label>
+                    <input type="text" class="form-control" id="ime" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefon" class="form-label">Broj telefona</label>
+                    <input type="tel" class="form-control" id="telefon" required>
+                </div>
+    
+                <!-- Dugme za slanje -->
+                <button type="submit" class="btn btn-primary w-100">Rezerviraj termin</button>
+            </form>
+            
+            <br>
         </div>
-
-        <!-- Kontakt Forma -->
-        <div class="col-md-7">
-          <h4>Pošaljite upit</h4>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Ime i prezime</label>
-              <input type="text" class="form-control" id="name" required />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Poruka</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Pošalji</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    
+      
+  
+    
 
     
     
